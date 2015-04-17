@@ -1,0 +1,1 @@
+Template.coreLayoutMaterialize.replaces('coreLayout');

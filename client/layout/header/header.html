@@ -1,7 +1,8 @@
 <template name="layoutHeaderMaterialize">
-    <div class="container-fluid">
-        <div class="nav" role="navigation">
-            <div class="row navbar-shop">
+    <!-- <div class="container-fluid"> -->
+    <div class="nav-wrapper">
+        <!-- <div role="navigation"> -->
+            <!-- <div class="row navbar-shop">
                 <div class="navbar-brand">{{> headerBrand}}</div>
                 <div class="navbar-cart">{{> cartIcon}}</div>
                 <div class="cart-alert">{{> cartPanel}}</div>
@@ -10,7 +11,15 @@
             </div>
             <div class="row navbar-primary-tags">
                 <div class="navbar-tags">{{> headerTags}}</div>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
+        <a href="/" class="brand-logo">{{> headerBrand}}</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>{{> cartIcon}}</li>
+        <li>{{> cartPanel}}</li>
+        <li>{{> accounts tpl="loginDropdown"}}</li>
+        <li>{{> i18nChooser}}</li>
+        <li>{{> headerTags}}</li>
+      </ul>
     </div>
 </template>

@@ -15,8 +15,15 @@ Package.onUse(function(api) {
   api.use('reactioncommerce:core@0.5.6');
   api.imply('reactioncommerce:core');
   api.use('templating');
+  api.imply('materialize:materialize@0.96.1');
+  api.use('materialize:materialize');
+  // api.imply('nicolaslopezj:reactive-templates@1.1.0');
+  // api.use('nicolaslopezj:reactive-templates');
+  api.imply('aldeed:template-extension@3.4.3');
+  api.use('aldeed:template-extension');
   api.addFiles('reaction-materialize-theme.js');
   api.addFiles(['client/layout/header/header.html','client/layout/header/header.js'],'client');
+  api.addFiles(['client/layout/coreLayout/coreLayout.html','client/layout/coreLayout/coreLayout.js'],'client');
 });
 
 Package.onTest(function(api) {
